@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> kantin</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" 
+rel="stylesheet">
+
+ <!--Feather icon-->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+ <!--My style-->
+ <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+  <!--Navbar start-->
+<nav class="navbar">
+<a href="#" class="navbar-logo"> ⋆˚✿˖° Kantin Lugina </a>
+
+<div class="navbar-nav">
+<a href="#">Home</a>
+<a href="#Menu">Menu</a>
+</div>
+
+<div class="navbar-extra">
+<a href="#" id="shopping-cart">
+  <i data-feather="shopping-cart"></i>
+  <span id="cart-count" class="cart-count">0</span>
+</a>
+
+  <a id="menu"><i data-feather="menu"></i></a>
+    
+</div>
+
+
+
+
+</nav>
+    <!--Navbar end-->
+
+    <!--Hero Section start-->
+    <section class="hero" id="#">
+      <main class="content">
+        <h1>Ayo Jajan!</h1>
+        <p>Aneka Jajanan Lezat,Teman Setia Waktu Istirahat</p>
+        <a href="#Menu" class="cta">Pesan Sekarang</a>
+      </main>
+    </section>
+
+     <!--Hero Section end-->
+
+
+
+
+     <!--menu section start-->
+     <section id="Menu" class="menu">
+      <h2><span>Daftar </span>Menu</h2>
+      <p>Pilihlah menu favorit kalian 
+        dan pesan disini 
+      </p>
+
+      <!--Baris menu kesatu-->
+      <div class="menu-row">
+  <div class="menu-item">
+    <img src="img/seblak.jpg" alt="Seblak" class="menu-img">
+    <h3>Seblak</h3>
+<label for="varian-seblak">Pilih Varian:</label>
+  <select class="menu-varian">
+    <option value="15000">Seblak Biasa - Rp 5000</option>
+    <option value="10000">Seblak Campur - Rp 10.000</option>
+    <option value="15000">Seblak Spesial Topping - Rp 15.000</option>
+  </select>
+
+
+  <label>Level Pedas:</label>
+  <select class="menu-level">
+    <option value="1">Level 1</option>
+    <option value="2">Level 2</option>
+    <option value="3">Level 3</option>
+  </select>
+
+  <button class="add-to-cart" 
+    data-name="Seblak" >
+    Pesan
+  </button>
+</div>
+
+  <div class="menu-item">
+    <img src="img/tahu bulat.jpg" class="menu-img">
+    <h3>Tahu Bulat</h3>
+<label for="varian-seblak">Pilih Jumlah:</label>
+  <select class="menu-varian">
+    <option value="2000"> 2pcs - Rp.2000</option>
+    
+  </select>
+
+
+  <label>Bumbu:</label>
+  <select class="menu-level">
+    <option value="1">Asin Pedas</option>
+    <option value="2">Asin Keju</option>
+    <option value="3">Asin</option>
+  </select>
+
+  <button class="add-to-cart" 
+    data-name="Tahu Bulat">
+    Pesan
+  </button>
+</div>
+</div>
+
+<!--Baris Menu Kedua-->
+<div class="menu-row">
+  <div class="menu-item">
+    <img src="img/cireng.jpg" class="menu-img">
+    <h3>Cireng Isi</h3>
+<label for="varian-seblak">Pilih jumlah:</label>
+  <select class="menu-varian">
+    <option value="1000"> 1pcs - Rp 1000</option>
+  </select>
+
+
+  <label>Bumbu:</label>
+  <select class="menu-level">
+    <option value="Asin Pedas">Asin Pedas</option>
+    <option value="Asin Keju">Asin Keju</option>
+    <option value="Asin">Asin</option>
+  </select>
+
+  <button class="add-to-cart" 
+    data-name="Cireng">
+    Pesan
+  </button>
+</div>
+
+  <div class="menu-item">
+    <img src="img/cireng bentuk.jpg" class="menu-img">
+    <h3>Cireng Isi Bentuk</h3>
+<label for="varian-seblak">Pilih jumlah:</label>
+  <select class="menu-varian">
+    <option value="1500"> 1pcs - Rp 1500</option>
+  </select>
+
+
+    <label>Bumbu:</label>
+  <select class="menu-level">
+    <option value="Asin Pedas">Asin Pedas</option>
+    <option value="Asin Keju">Asin Keju</option>
+    <option value="Asin">Asin</option>
+  </select>
+
+  <button class="add-to-cart" 
+    data-name="Cireng Bentuk">
+    Pesan
+  </button>
+</div>
+</div>
+
+<!--Baris Menu Ketiga-->
+<div class="menu-row">
+  <div class="menu-item">
+    <img src="img/usus.jpg" class="menu-img">
+    <h3>Usus Crispy</h3>
+<label for="varian-seblak">Harga:</label>
+  <select class="menu-varian">
+    <option value="2000"> 1pcs - Rp 2000</option>
+  </select>
+
+
+  <label>Bumbu:</label>
+  <select class="menu-level">
+    <option value="Pedas">Pedas</option>
+    <option value="Keju">Keju</option>
+    <option value="Asin">Asin</option>
+  </select>
+
+
+  <button class="add-to-cart" 
+    data-name="Usus Crispy">
+    Pesan
+  </button>
+</div>
+
+
+  <div class="menu-item">
+    <img src="img/mie.jpeg" class="menu-img">
+    <h3>Mie Indomie</h3>
+<label for="varian-seblak">Harga:</label>
+  <select class="menu-varian">
+    <option value="5000"> Rp 5000</option>
+  </select>
+
+ <label>Varian:</label>
+  <select class="menu-level">
+    <option value="Goreng">Goreng</option>
+    <option value="Kuah">Kuah</option>
+    <option value="Rasa Lain">Rasa pilih di etalase</option>
+  </select>
+
+  <button class="add-to-cart" 
+    data-name="Mie Indomie">
+    Pesan
+  </button>
+</div>
+</div>
+
+ <!--Baris Menu Ke lima-->
+<div class="menu-row">
+  <div class="menu-item">
+    <img src="img/basreng.jpg" class="menu-img">
+    <h3>Basreng</h3>
+<label for="varian-seblak">Harga:</label>
+  <select class="menu-varian">
+    <option value="3000"> Rp 3000</option>
+    <option value="5000"> Rp 5000</option>
+    <option value="10000"> Rp 10000</option>
+  </select>
+
+  <label>Bumbu:</label>
+  <select class="menu-level">
+    <option value="Asin Pedas">Asin Pedas</option>
+    <option value="Asin Keju">Asin Keju</option>
+    <option value="Asin">Asin</option>
+  </select>
+
+
+  <button class="add-to-cart" 
+    data-name="Basreng">
+    Pesan
+  </button>
+</div>
+
+
+  <div class="menu-item">
+    <img src="img/baso ikan.jpg" class="menu-img">
+    <h3>Bakso Ikan</h3>
+<label for="varian-seblak">Harga:</label>
+  <select class="menu-varian">
+    <option value="2000"> 3pcs - Rp 2000</option>
+  </select>
+
+ <label>Bumbu:</label>
+  <select class="menu-level">
+    <option value="Pedas">Pedas</option>
+    <option value="Saos Kecap">Saos Kecap</option>
+    <option value="Tidak Pedas">Tidak Pedas</option>
+  </select>
+
+  <button class="add-to-cart" 
+    data-name="Bakso Ikan">
+    Pesan
+  </button>
+</div>
+</div>
+
+ <!--Baris Menu Ke enam-->
+<div class="menu-row">
+  <div class="menu-item">
+    <img src="img/air mineral.jpg" class="menu-img">
+    <h3>Air Mineral</h3>
+<label for="varian-seblak">Harga:</label>
+  <select class="menu-varian">
+    <option value="2000"> Rp 2000</option>
+  </select>
+
+  <label>Varian:</label>
+  <select class="menu-level">
+    <option value="Dingin">Dingin</option>
+    <option value="Biasa">Biasa</option>
+  </select>
+
+
+  <button class="add-to-cart" 
+    data-name="Air Mineral">
+    Pesan
+  </button>
+</div>
+
+
+  <div class="menu-item">
+    <img src="img/teh pucuk.jpg" class="menu-img">
+    <h3>Teh Pucuk</h3>
+<label for="varian-seblak">Harga:</label>
+  <select class="menu-varian">
+    <option value="4000"> Rp 4000</option>
+  </select>
+
+<label>Varian:</label>
+  <select class="menu-level">
+    <option value="Dingin">Dingin</option>
+    <option value="Biasa">Biasa</option>
+  </select>
+
+  <button class="add-to-cart"
+    data-name="Teh Pucuk">
+    Pesan
+  </button>
+</div>
+</div>
+
+
+<!-- Overlay -->
+<div id="cart-overlay"></div>
+
+
+<!-- Sidebar Cart -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Keranjang Pesanan</h2>
+  <ul id="cart-items"></ul>
+  <div class="cart-footer">
+    <p>Total: Rp <span id="cart-total">0</span></p>
+    <button id="checkout-btn">Bayar</button>
+  </div>
+  
+  
+<!-- Sidebar Payment -->
+<div id="payment-sidebar" class="cart-sidebar">
+  <h2>Pembayaran</h2>
+  <p>Total: Rp <span id="payment-total">0</span></p>
+
+  <label for="payment-method">Pilih Metode:</label>
+  <select id="payment-method">
+    <option value="qris">QRIS</option>
+    <option value="cash">Tunai</option>
+  </select>
+
+  <!-- QRIS Section -->
+  <div id="qris-section" class="payment-section">
+    <p>Scan kode QR berikut untuk pembayaran:</p>
+    <img src="img/contoh qris.jpg" alt="QRIS" width="200">
+  </div>
+
+  <!-- Cash Section -->
+  <div id="cash-section" class="payment-section" style="display:none;">
+    <p>Silakan lakukan pembayaran langsung kepada kasir.</p>
+  </div>
+  <button class="pay-now-btn" id="pay-now-btn">Bayar</button>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+    
+
+     </section>
+
+     
+     <!--menu section end-->
+
+  
+    
+
+
+
+        <!--Feather icon-->
+    <script>
+  feather.replace();
+</script>
+
+<!--My Javascript-->
+<script src="js/script.js"></script>
+
+</body>
+</html>
